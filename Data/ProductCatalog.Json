@@ -1,0 +1,57 @@
+{
+  "ad04ff83-5f0b-4092-ae69-d432c3446821": {
+    "$type": "Product",
+    "salePrice": null,
+    "price": 0.33,
+    "id": "ad04ff83-5f0b-4092-ae69-d432c3446821",
+    "description": "Banana",
+    "Price": 0.33,
+    "AmountDue": 0.33,
+    "ID": "ad04ff83-5f0b-4092-ae69-d432c3446821",
+    "Description": "Banana"
+  },
+  "e1d57fe0-74b0-4d92-8b76-1e895ea563d4": {
+    "$type": "Product",
+    "salePrice": null,
+    "price": 1.00,
+    "id": "e1d57fe0-74b0-4d92-8b76-1e895ea563d4",
+    "description": "Gala Apple",
+    "Price": 1.00,
+    "AmountDue": 1.00,
+    "ID": "e1d57fe0-74b0-4d92-8b76-1e895ea563d4",
+    "Description": "Gala Apple"
+  },
+  "640d4eb6-f537-4a22-9690-15792f6509f9": {
+    "$type": "Product",
+    "salePrice": null,
+    "price": 4.99,
+    "id": "640d4eb6-f537-4a22-9690-15792f6509f9",
+    "description": "Honey 500 ml",
+    "Price": 4.99,
+    "AmountDue": 4.99,
+    "ID": "640d4eb6-f537-4a22-9690-15792f6509f9",
+    "Description": "Honey 500 ml"
+  },
+  "ff9a9441-8a08-4ddd-9009-d7d5222434bc": {
+    "$type": "Product",
+    "salePrice": null,
+    "price": 8.55,
+    "id": "ff9a9441-8a08-4ddd-9009-d7d5222434bc",
+    "description": "Cheese 500 g",
+    "Price": 8.55,
+    "AmountDue": 8.55,
+    "ID": "ff9a9441-8a08-4ddd-9009-d7d5222434bc",
+    "Description": "Cheese 500 g"
+  },
+  "71f722ad-cd7b-4162-872e-e455465377b2": {
+    "$type": "Product",
+    "salePrice": null,
+    "price": 7.79,
+    "id": "71f722ad-cd7b-4162-872e-e455465377b2",
+    "description": "Toasty O's Cereal 900 g",
+    "Price": 7.79,
+    "AmountDue": 7.79,
+    "ID": "71f722ad-cd7b-4162-872e-e455465377b2",
+    "Description": "Toasty O's Cereal 900 g"
+  }
+}

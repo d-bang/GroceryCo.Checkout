@@ -1,0 +1,62 @@
+{
+  "e1d57fe0-74b0-4d92-8b76-1e895ea563d4": {
+    "$type": "SalePromotion",
+    "salePrice": 0.50,
+    "itemId": "e1d57fe0-74b0-4d92-8b76-1e895ea563d4",
+    "startDate": "06/04/2017 12:00:00",
+    "endDate": "10/04/2017 12:00:00",
+    "description": "Gala Apple Sale",
+    "Saleprice": 0.50,
+    "StartDate": "06/04/2017 12:00:00",
+    "EndDate": "10/04/2017 12:00:00",
+    "ItemId": "e1d57fe0-74b0-4d92-8b76-1e895ea563d4",
+    "Description": "Gala Apple Sale"
+  },
+  "640d4eb6-f537-4a22-9690-15792f6509f9": {
+    "$type": "BatchPromotion",
+    "batchCalculator": {
+      "$type": "BogoDiscountCalculator",
+      "equivalentModifier": 0.5,
+      "PurchaseNumber": 1,
+      "EquivalentModifier": 0.5
+    },
+    "itemId": "640d4eb6-f537-4a22-9690-15792f6509f9",
+    "startDate": "06/04/2017 12:00:00",
+    "endDate": "10/04/2017 12:00:00",
+    "description": "Honey - Buy 1 get on 1/2 off Sale",
+    "StartDate": "06/04/2017 12:00:00",
+    "EndDate": "10/04/2017 12:00:00",
+    "ItemId": "640d4eb6-f537-4a22-9690-15792f6509f9",
+    "Description": "Honey - Buy 1 get on 1/2 off Sale"
+  },
+  "ff9a9441-8a08-4ddd-9009-d7d5222434bc": {
+    "$type": "BatchPromotion",
+    "batchCalculator": {
+      "$type": "GroupDiscountCalculator",
+      "groupNumber": 3,
+      "itemRegularPrice": 8.55,
+      "GroupNumber": 3
+    },
+    "itemId": "ff9a9441-8a08-4ddd-9009-d7d5222434bc",
+    "startDate": "06/04/2017 12:00:00",
+    "endDate": "10/04/2017 12:00:00",
+    "description": "Bunch 'O' cheese Sale",
+    "StartDate": "06/04/2017 12:00:00",
+    "EndDate": "10/04/2017 12:00:00",
+    "ItemId": "ff9a9441-8a08-4ddd-9009-d7d5222434bc",
+    "Description": "Bunch 'O' cheese Sale"
+  },
+  "ad04ff83-5f0b-4092-ae69-d432c3446821": {
+    "$type": "SalePromotion",
+    "salePrice": 0.17,
+    "itemId": "ad04ff83-5f0b-4092-ae69-d432c3446821",
+    "startDate": "06/04/2017 12:00:00",
+    "endDate": "10/04/2017 12:00:00",
+    "description": "Banana Sale",
+    "Saleprice": 0.17,
+    "StartDate": "06/04/2017 12:00:00",
+    "EndDate": "10/04/2017 12:00:00",
+    "ItemId": "ad04ff83-5f0b-4092-ae69-d432c3446821",
+    "Description": "Banana Sale"
+  }
+}

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2085F8E-872B-44DC-8463-46EC81F6E037}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>GroceryCo.Checkout</RootNamespace>
-    <AssemblyName>GroceryCo.Checkout</AssemblyName>
+    <ProjectGuid>{83963071-F8D4-47FE-AE6E-7B3FAE2A8169}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GroceryCo.Common</RootNamespace>
+    <AssemblyName>GroceryCo.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,6 +33,9 @@
     <Reference Include="Autofac, Version=4.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.4.5.0\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,18 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Promo\Base\BatchCalculatorBase.cs" />
+    <Compile Include="Core\Base\CatalogBase.cs" />
+    <Compile Include="Promo\Base\PromotionBase.cs" />
+    <Compile Include="Promo\BogoDiscountCalculator.cs" />
+    <Compile Include="Promo\GroupDiscountCalculator.cs" />
+    <Compile Include="Promo\Interface\IBatchCalculator.cs" />
+    <Compile Include="Promo\Interface\IBatchPromotion.cs" />
+    <Compile Include="Promo\Interface\IBogoCalculator.cs" />
+    <Compile Include="Core\Interfaces\ICatalogBase.cs" />
+    <Compile Include="Promo\Interface\IGroupCalculator.cs" />
+    <Compile Include="Promo\Interface\ISalePromotion.cs" />
+    <Compile Include="Core\CheckOutTransaction.cs" />
+    <Compile Include="Core\Product.cs" />
+    <Compile Include="Core\ProductCatalog.cs" />
+    <Compile Include="Promo\BatchPromotion.cs" />
+    <Compile Include="Core\PromotionCatalog.cs" />
+    <Compile Include="Data\Base\GCDataContextBase.cs" />
+    <Compile Include="Data\Interfaces\IDataContext.cs" />
+    <Compile Include="Data\JSonFileDataContext.cs" />
+    <Compile Include="Core\Interfaces\ICheckOutTransaction.cs" />
+    <Compile Include="Core\Interfaces\IProduct.cs" />
+    <Compile Include="Core\Interfaces\IProductCatalog.cs" />
+    <Compile Include="Core\Interfaces\IPromotionCatalog.cs" />
+    <Compile Include="Promo\Interface\IPromotion.cs" />
+    <Compile Include="Promo\SalePromotion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GroceryCo.Common\GroceryCo.Common.csproj">
-      <Project>{83963071-f8d4-47fe-ae6e-7b3fae2a8169}</Project>
-      <Name>GroceryCo.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
